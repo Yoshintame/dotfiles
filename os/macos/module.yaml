@@ -71,3 +71,8 @@
     ~/.config/wezterm/:
       path: modules/wezterm/config/**
       glob: true
+
+    # yabai
+    ~/.config/yabai/:
+      path: modules/yabai/config/**
+      glob: true
