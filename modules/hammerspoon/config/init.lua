@@ -19,6 +19,7 @@ spoon.AppLauncher:bindHotkeys({
     ["Arc"]                = { { "alt"                  }, "A" },
     ["Safari"]             = { { "alt", "shift"         }, "A" },
     ["Spotify"]            = { { "alt"                  }, "S" },
+    ["Spark Mail"]         = { { "alt", "shift"         }, "S" },
     ["Cursor"]             = { { "alt"                  }, "D" },
     ["Visual Studio Code"] = { { "alt", "shift"         }, "D" },
 

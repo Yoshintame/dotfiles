@@ -16,6 +16,16 @@ for file in $fisher_path/conf.d/*.fish
     end
 end
 
+# function starship_transient_prompt_func
+#   starship module character
+# end
+
+function starship_transient_rprompt_func
+  starship module time
+end
+
+enable_transience
+
 # pnpm
 set -gx PNPM_HOME "/Users/yoshintame/.local/share/pnpm"
 if not string match -q -- $PNPM_HOME $PATH

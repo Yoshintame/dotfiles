@@ -64,6 +64,9 @@
     ~/.config/fish/:
       path: modules/fish/config/**
       glob: true
+
+    ~/.config/fish-ai.ini: modules/fish/config/fish-ai.ini
+
     # wezterm
     ~/.config/wezterm/:
       path: modules/wezterm/config/**

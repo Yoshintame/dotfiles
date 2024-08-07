@@ -17,7 +17,7 @@ add_newline = false
 # format = """$os $all"""
 
 format = """
-$os $username$hostname$directory$git_branch$git_status$git_commit$python$cmd_duration
+$os$username$hostname$directory$git_branch$git_status$git_commit$python$cmd_duration
 $character
 """
 
@@ -41,32 +41,32 @@ disabled = false
 truncation_length = 3
 truncation_symbol = "…/"
 truncate_to_repo = true
-home_symbol = " ~"
+home_symbol = '󰋜 ~'
 read_only_style = "197"
 read_only = "  "
 format = "at [$path]($style)[$read_only]($read_only_style) "
 
 [git_branch]
-symbol = " "
+symbol = ' '
 format = "via [$symbol$branch]($style) "
-# truncation_length = 4
 truncation_symbol = "…/"
 style = "bold green"
 
+
 [git_status]
-format = '[\($all_status$ahead_behind\)]($style) '
-style = "bold green"
-conflicted = "🏳"
-up_to_date = " "
-untracked = " "
-ahead = "⇡${count}"
-diverged = "⇕⇡${ahead_count}⇣${behind_count}"
-behind = "⇣${count}"
-stashed = " "
-modified = " "
-staged = '[++\($count\)](green)'
-renamed = "襁 "
-deleted = " "
+format = '([ \( $all_status$ahead_behind\)]($style) )'
+style = 'bold green'
+conflicted = '[ confliced=${count}](red) '
+up_to_date = '[󰘽 up-to-date](green) '
+untracked = '[󰋗 untracked=${count}](red) '
+ahead = ' ahead=${count}'
+diverged = ' ahead=${ahead_count}  behind=${behind_count}'
+behind = ' behind=${count}'
+stashed = '[ stashed=${count}](green) '
+modified = '[󰛿 modified=${count}](yellow) '
+staged = '[󰐗 staged=${count}](green) '
+renamed = '[󱍸 renamed=${count}](yellow) '
+deleted = '[󰍶 deleted=${count}](red) '
 
 [kubernetes]
 format = 'via [ﴱ $context\($namespace\)](bold purple) '
@@ -107,50 +107,45 @@ disabled = false
 
 [os.symbols]
 Alpaquita = " "
-Alpine = ""
+Alpine = " "
+AlmaLinux = " "
 Amazon = " "
 Android = " "
-Arch = ""
+Arch = " "
 Artix = " "
-# Aosc = ""
-CentOS = ""
-# CoreOS = ""
-Debian = ""
-# Devuan = ""
+CentOS = " "
+Debian = " "
 DragonFly = " "
-# Elementary = ""
 Emscripten = " "
 EndeavourOS = " "
-Fedora = ""
+Fedora = " "
 FreeBSD = " "
 Garuda = "󰛓 "
-Gentoo = ""
+Gentoo = " "
 HardenedBSD = "󰞌 "
 Illumos = "󰈸 "
+Kali = " "
 Linux = " "
 Mabox = " "
-Macos = ""
-# Mageia = ""
-Manjaro = ""
+Macos = " "
+Manjaro = " "
 Mariner = " "
 MidnightBSD = " "
-Mint = ""
+Mint = " "
 NetBSD = " "
-NixOS = ""
+NixOS = " "
 OpenBSD = "󰈺 "
-# Kali = "ﴣ"
-openSUSE = ""
+openSUSE = " "
 OracleLinux = "󰌷 "
 Pop = " "
-Raspbian = ""
+Raspbian = " "
 Redhat = " "
 RedHatEnterprise = " "
+RockyLinux = " "
 Redox = "󰀘 "
-# Rhel = ""
-# Sabayon = ""
-# Slackware = ""
 Solus = "󰠳 "
 SUSE = " "
-Ubuntu = ""
+Ubuntu = " "
 Unknown = " "
+Void = " "
 Windows = "󰍲 "
